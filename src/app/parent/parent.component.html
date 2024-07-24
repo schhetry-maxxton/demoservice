@@ -1,0 +1,8 @@
+<!-- <h1>Hello {{message}}</h1> <br/> 
+<app-child [greetMessage]="childmessage"></app-child> -->
+
+<h3>Parent Component</h3>
+<label>Parent Component : </label> 
+<input type="text" #pcomponent (keyup)="0"/> <br>
+<p>Value of child component is: {{ CData }}</p>
+<app-child [PData]="pcomponent.value" (childEvent)="CData=$event"></app-child>
